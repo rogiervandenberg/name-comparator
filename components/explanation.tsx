@@ -105,15 +105,15 @@ export default function Explanation() {
             <div className="title">Privacy</div>
             <div className="content">
               <p>
-                Deze website – inclusief alle invoer en berekeningen die worden gedaan
-                – draait volledig in jouw browser. Er wordt niets naar een
-                server verzonden of opgeslagen. In feite is het een mooi
+                Deze website – inclusief alle invoer en berekeningen die worden
+                gedaan – draait volledig in jouw browser. Er wordt niets naar
+                een server verzonden of opgeslagen. In feite is het een mooi
                 opgemaakt 'schilletje' om een standaard stukje code op jouw
                 computer.
               </p>
               <p>
                 Als je het zelf wilt bekijken, kijk dan naar de broncode van
-                deze website op GitHub.
+                deze website op <a href="https://github.com/rogiervandenberg/name-comparator">GitHub</a>.
               </p>
             </div>
           </div>
