@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import * as gtag from "../lib/gtag";
 
 export default function NameCalculator() {
   const [name, setName] = useState("");
@@ -26,6 +27,11 @@ export default function NameCalculator() {
   function handleCopy() {
     hashFieldRef.current.select();
     document.execCommand("copy");
+
+    gtag.event({
+      action: "copy_name",
+    });
+
     setCopySuccess("Copied!");
   }
 
