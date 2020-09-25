@@ -14,8 +14,8 @@ export default function NameCalculator() {
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
       .replace(/\W/g, "");
-    // console.log(`Making hash for ${stringToHash}`);
-    return md5(stringToHash);
+    // console.log(`Making hash for "${stringToHash}"`);
+    return input.length > 0 ? md5(stringToHash) : "";
   }
 
   function handleTyping(name: string) {
