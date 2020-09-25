@@ -13,14 +13,17 @@ class MyDocument extends Document {
 
     return initialProps;
   }
+
+  
+
   render() {
+    let gaScript: string =
+      "https://www.googletagmanager.com/gtag/js?id=" + GA_TRACKING_ID;
+    
     return (
       <Html>
         <Head>
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-179009544-1"
-          ></script>
+          <script async src={gaScript}></script>
           <script
             dangerouslySetInnerHTML={{
               __html: `
