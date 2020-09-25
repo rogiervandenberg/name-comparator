@@ -1,3 +1,4 @@
+import { sha224 } from "js-sha256";
 import { useState, useRef } from "react";
 import * as gtag from "../lib/gtag";
 
@@ -10,13 +11,14 @@ export default function NameCalculator() {
 
   function makeHash(input: string): string {
     var md5 = require("md5");
+    var sha256 = require("js-sha256");
     const stringToHash = input
       .toLowerCase()
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
       .replace(/\W/g, "");
     // console.log(`Making hash for "${stringToHash}"`);
-    return input.length > 0 ? md5(stringToHash) : "";
+    return input.length > 0 ? md5(sha224(stringToHash)) : "";
   }
 
   function handleTyping(name: string) {

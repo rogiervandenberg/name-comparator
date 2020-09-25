@@ -46,15 +46,16 @@ export default function Explanation() {
             <div className="content">
               <p>
                 De code die je krijgt is een zogenaamde "
-                <a href="https://en.wikipedia.org/wiki/MD5">MD5-hash</a>".
+                <a href="https://en.wikipedia.org/wiki/MD5">MD5-hash</a>" van
+                een "<a href="https://en.wikipedia.org/wiki/SHA-2">SHA-2</a>" hash.
                 Eenvoudig gezegd betekent dit dat de naam wordt versleuteld
                 volgens een encryptie-algoritme, dat altijd hetzelfde resultaat
                 geeft bij dezelfde invoer.
               </p>
               <p>
-                Zo zal de naam "Wim" altijd&nbsp;
+                Zo zal de naam "Wim" altijd bv.&nbsp;
                 <span className="tag">874e1de3766969edaa069f98aa2e6f11</span>
-                als code opleveren en "Anna"&nbsp;
+                als code opleveren en "Anna" bv.&nbsp;
                 <span className="tag">a70f9e38ff015afaa9ab0aacabee2e13</span>.
               </p>
             </div>
