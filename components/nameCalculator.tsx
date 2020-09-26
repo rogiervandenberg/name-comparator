@@ -46,7 +46,7 @@ export default function NameCalculator() {
               <div className="field">
                 <div className="control">
                   <input
-                    className="input"
+                    className="input is-medium"
                     type="text"
                     placeholder="Vul hier de naam in die je hebt bedacht"
                     onChange={(event) => handleTyping(event.target.value)}
@@ -62,14 +62,14 @@ export default function NameCalculator() {
                 <p className="control">
                   <input
                     ref={hashFieldRef}
-                    className="input has-background-primary-light code"
+                    className="input is-medium has-background-primary-light code"
                     type="text"
                     value={hash}
                     readOnly
                   />
                 </p>
                 <p className="control">
-                  <a className="button" onClick={handleCopy}>
+                  <a className="button is-medium" onClick={handleCopy}>
                     {copySuccess}
                   </a>
                 </p>
