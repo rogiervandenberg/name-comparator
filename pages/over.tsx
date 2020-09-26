@@ -18,7 +18,7 @@ export default () => (
             gelachen. <i>#nerd</i>
           </p>
         </div>
-        <h2 className="subtitle">Een stukje achtergrond</h2>
+
         <div className="content">
           <div className="columns pt-5">
             <div className="column">
@@ -62,12 +62,13 @@ export default () => (
           <p>En het resultaat, daar kijk je nu naar. Veel plezier ermee!!</p>
           <p>Groet, Rogier</p>
         </div>
-
+        <h2 className="subtitle">Disclaimer</h2>
         <div className="content is-italic">
           <p>
-            PS: Deze website geeft geen enkele garantie over de beschikbaarheid,
-            werking of resultaten. Je kunt me niet aansprakelijk stellen met
-            betrekking tot de inhoud van deze website of geleverde dienst.
+            Deze website geeft geen enkele garantie over de beschikbaarheid,
+            werking of resultaten. Je kunt me niet verantwoordelijk houden of
+            aansprakelijk stellen met betrekking tot de inhoud van deze website
+            of geleverde dienst.
           </p>
           <p>
             De mooie plaatjes zijn gemaakt door <a href="https://twitter.com/ninaLimpi">Katerina Limpitsouni</a>.
