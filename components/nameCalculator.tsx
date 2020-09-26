@@ -1,29 +1,19 @@
-import { sha224 } from "js-sha256";
 import { useState, useRef } from "react";
 import * as gtag from "../lib/gtag";
+import NameCode from "../lib/nameCode";
 
 export default function NameCalculator() {
+  const textOnCopyButton = "Kopieer code";
+
   const [name, setName] = useState("");
   const [hash, setHash] = useState("");
 
-  const [copySuccess, setCopySuccess] = useState("");
+  const [copySuccess, setCopySuccess] = useState(textOnCopyButton);
   const hashFieldRef = useRef(null);
-
-  function makeHash(input: string): string {
-    var md5 = require("md5");
-    var sha256 = require("js-sha256");
-    const stringToHash = input
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .replace(/\W/g, "");
-    // console.log(`Making hash for "${stringToHash}"`);
-    return input.length > 0 ? md5(sha224(stringToHash)) : "";
-  }
 
   function handleTyping(name: string) {
     setName(name);
-    setHash(makeHash(name));
+    setHash(new NameCode().forName(name));
   }
 
   function handleCopy() {
@@ -34,7 +24,11 @@ export default function NameCalculator() {
       action: "copy_name",
     });
 
-    setCopySuccess("Copied!");
+    setCopySuccess("Gekopieerd!!");
+
+    setTimeout(() => {
+      setCopySuccess(textOnCopyButton);
+    }, 1000);
   }
 
   return (
@@ -65,7 +59,7 @@ export default function NameCalculator() {
             <div className="column">
               <h1 className="title">Code</h1>
               <div className="field has-addons">
-                <p className="control is-expanded">
+                <p className="control">
                   <input
                     ref={hashFieldRef}
                     className="input has-background-primary-light code"
@@ -76,7 +70,7 @@ export default function NameCalculator() {
                 </p>
                 <p className="control">
                   <a className="button" onClick={handleCopy}>
-                    Kopieer code
+                    {copySuccess}
                   </a>
                 </p>
               </div>
