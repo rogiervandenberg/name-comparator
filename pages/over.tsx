@@ -71,7 +71,7 @@ export default () => (
             of geleverde dienst.
           </p>
           <p>
-            De mooie plaatjes zijn gemaakt door <a href="https://twitter.com/ninaLimpi">Katerina Limpitsouni</a>.
+            De mooie plaatjes zijn gemaakt door <a href="https://twitter.com/ninaLimpi">Katerina Limpitsouni</a> en <a href="https://www.cleanpng.com/png-infant-smiley-child-clip-art-cute-baby-cliparts-582491/">Fiorela</a>.
           </p>
         </div>
       </div>
