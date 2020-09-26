@@ -31,6 +31,35 @@ export default function Layout({
           {siteTitle} {title ? " - " + title : ""}
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Zeker weten dat jullie niet dezelfde naam hebben bedacht, zonder dat je elkaar de naam hoeft te vertellen!"
+        />
+        <meta property="og:url" content="https://www.naamvergelijker.nl/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Babynaam vergelijker" />
+        <meta
+          property="og:description"
+          content="Zeker weten dat jullie niet dezelfde naam hebben bedacht, zonder dat je elkaar de naam hoeft te vertellen!"
+        />
+        <meta
+          property="og:image"
+          content="https://www.naamvergelijker.nl/images/undraw_baby_ja7a.svg"
+        />
+        <meta
+          property="twitter:url"
+          content="https://www.naamvergelijker.nl/"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Babynaam vergelijker" />
+        <meta
+          name="twitter:description"
+          content="Zeker weten dat jullie niet dezelfde naam hebben bedacht, zonder dat je elkaar de naam hoeft te vertellen!"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.naamvergelijker.nl/images/undraw_baby_ja7a.svg"
+        />
       </Head>
       <header>
         <nav
