@@ -15,8 +15,9 @@ export default function Explanation() {
                 website.
               </p>
               <p>
-                Als 2 codes gelijk zijn, dan is dezelfde naam gebruikt. Als 2
-                codes verschillend zijn, dan zijn de namen ook verschillend.
+                Als 2 codes verschillend zijn, dan waren de ingevulde namen ook
+                verschillend. Als 2 codes gelijk zijn, dan weet je met meer dan
+                99,99% zekerheid dat dezelfde naam was ingevuld.
               </p>
             </div>
           </div>
@@ -45,18 +46,17 @@ export default function Explanation() {
             <div className="title">Je berekent een code</div>
             <div className="content">
               <p>
-                De code die je krijgt is een zogenaamde "
-                <a href="https://en.wikipedia.org/wiki/MD5">MD5-hash</a>" van
-                een "<a href="https://en.wikipedia.org/wiki/SHA-2">SHA-2</a>" hash.
+                De code die je krijgt is het eerste stukje van een een "
+                <a href="https://en.wikipedia.org/wiki/SHA-2">SHA-2</a>" hash.
                 Eenvoudig gezegd betekent dit dat de naam wordt versleuteld
                 volgens een encryptie-algoritme, dat altijd hetzelfde resultaat
                 geeft bij dezelfde invoer.
               </p>
               <p>
-                Zo zal de naam "Wim" altijd bv.&nbsp;
-                <span className="tag">874e1de3766969edaa069f98aa2e6f11</span>
-                als code opleveren en "Anna" bv.&nbsp;
-                <span className="tag">a70f9e38ff015afaa9ab0aacabee2e13</span>.
+                Zo zal de naam "Wim" altijd&nbsp;
+                <span className="tag">fce29e</span>
+                als code opleveren en "Aagje"&nbsp;
+                <span className="tag">feb119</span>.
               </p>
             </div>
           </div>
@@ -70,8 +70,9 @@ export default function Explanation() {
             <div className="content">
               <p>
                 Een ingevoerde naam wordt ontdaan van hoofdletters, spaties en
-                andere tekens. Dus "Jan-Willem" en "jan willem" zullen dezelfde
-                code opleveren (Het is immers dezelfde naam).
+                andere tekens. Dus "Jan-Willem" en "jan willem" of "René" en
+                "rene" zullen dezelfde code opleveren (Het is immers dezelfde
+                naam).
               </p>
               <p>
                 Maar, een andere naam die erg veel lijkt op een ingevoerde naam
@@ -114,7 +115,11 @@ export default function Explanation() {
               </p>
               <p>
                 Als je het zelf wilt bekijken, kijk dan naar de broncode van
-                deze website op <a href="https://github.com/rogiervandenberg/name-comparator">GitHub</a>.
+                deze website op{" "}
+                <a href="https://github.com/rogiervandenberg/name-comparator">
+                  GitHub
+                </a>
+                .
               </p>
             </div>
           </div>
